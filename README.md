@@ -42,9 +42,9 @@ koppel de [RandomContact API](https://randomuser.me/) met [Angular Material](htt
 	- En voeg de gecreëerde service vervolgens toe aan je app.module.ts providers zodat hij beschikbaar wordt binnen de applicatie. ![imports](https://github.com/davidvdijk/brightcubes-workshop/blob/master/images/snippet3.PNG)
 - De ContactService gaan we uitbreiden door de HttpClient te injecten. Hierdoor is het mogelijk Http calls te maken.
 ![imports](https://github.com/davidvdijk/brightcubes-workshop/blob/master/images/snippet4.PNG)
-hiervoor moeten we wel HttpClientModule toevoegen aan de app.module.ts imports
+	- hiervoor moeten we wel HttpClientModule toevoegen aan de app.module.ts imports
 ![imports](https://github.com/davidvdijk/brightcubes-workshop/blob/master/images/snippet5.PNG)
-En toevoegen aan de bovenkant van je file imports.
+	- En toevoegen aan de bovenkant van je file imports.
 ![imports](https://github.com/davidvdijk/brightcubes-workshop/blob/master/images/snippet6.PNG)
-Vervolgens maken we een loadContacts functie die een RxJs (asynchrone) observable kan returnen.
+	- Vervolgens maken we een loadContacts functie die een RxJs (asynchrone) observable kan returnen.
 ![imports](https://github.com/davidvdijk/brightcubes-workshop/blob/master/images/snippet7.PNG)
