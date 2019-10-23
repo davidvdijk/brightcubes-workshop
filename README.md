@@ -91,8 +91,7 @@ Hier zie je dat de contacten asynchroon worden uitgelezen, en als hij gevuld is,
 ![imports](https://github.com/davidvdijk/brightcubes-workshop/blob/master/images/snippet21.PNG)
 - Vervang de inhoud van detail.component.html voor onderstaande ![imports](https://github.com/davidvdijk/brightcubes-workshop/blob/master/images/snippet22.PNG)
 	- In deze snippet zie je dat contactService direct wordt aangesproken, en door de async pipe ( | ) asynchroon wordt ingeladen zodra selectedContact$ een waarde heeft. Door ‘as contact’ wijs je die waarde toe aan een variabele naam die je door in je template kunt gebruiken.
-- De card is nog niet zichtbaar omdat het een module uit @angular/material is, deze moeten we net zoals de list toevoegen aan de imports van app.module.ts en bovenaan toevoegen zodat de module weet waar hij de module kan vinden.
-</br>
+- De card is nog niet zichtbaar omdat het een module uit @angular/material is, deze moeten we net zoals de list toevoegen aan de imports van app.module.ts en bovenaan toevoegen zodat de module weet waar hij de module kan vinden.</br>
 ![imports](https://github.com/davidvdijk/brightcubes-workshop/blob/master/images/snippet23.PNG)
 - Zorg dat de titel, voornaam en achternaam in de titel van de card wordt gebruikt.
 - Zorg dat het emailadres in de subtitel zichtbaar wordt, de thumbnail in de mat-card-avatar, en een grote afbeelding in mat-card-image.
