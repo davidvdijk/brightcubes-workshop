@@ -32,7 +32,7 @@ koppel de [RandomContact API](https://randomuser.me/) met [Angular Material](htt
 
 - Angular heeft uit zichzelf app-routing.module.ts toegevoegd.
 	- Wijzig deze door in de routes array het volgende te zetten
-![Routes](https://github.com/davidvdijk/brightcubes-workshop/images/snippet1.png|alt=snippet1)
+![Routes](/images/snippet1.PNG|alt=snippet1)
 ``const  routes: Routes = [
 {
 	path:  '',
