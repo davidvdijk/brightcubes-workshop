@@ -1,0 +1,9 @@
+<mat-list>
+    <mat-list-item (click)="onClick(contact)" *ngFor="let contact of contacts | async">
+      <h3 matLine>{{contact.name.title}} {{contact.name.last}}, {{contact.name.first}} </h3>
+      <p matLine>
+        <span> {{contact.location.city}} </span>
+        <span>{{contact.location.coordinates.longitude}}, {{contact.location.coordinates.latitude}}</span>
+      </p>
+    </mat-list-item>
+  </mat-list>

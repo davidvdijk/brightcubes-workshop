@@ -1,0 +1,15 @@
+<div class="detail-page">
+<mat-card class="example-card" *ngIf="(contactService.selectedContact$ | async) as contact">
+    <mat-card-header>
+      <img mat-card-avatar src="{{contact.picture.thumbnail}}">
+      <mat-card-title>{{contact.name.title}} {{contact.name.first}} {{contact.name.last}}</mat-card-title>
+      <mat-card-subtitle>{{contact.email}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="{{contact.picture.large}}">
+    <mat-card-content>
+      <p>
+        {{contact.name.title}} {{contact.name.first}} is from {{contact.location.city}},{{contact.location.country}}
+      </p>
+    </mat-card-content>
+  </mat-card>
+</div>
