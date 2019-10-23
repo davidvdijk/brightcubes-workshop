@@ -85,9 +85,9 @@ Hier zie je dat de contacten asynchroon worden uitgelezen, en als hij gevuld is,
 	- Zodra je op een list item klikt wordt je naar /detail genavigeerd. Hier willen we uiteindelijk meer details van desbetreffend contact + een afbeelding om wie het gaat.
 - Om het selectedContact$ te kunnen ophalen moet de ContactService worden geïnjecteerd in het DetailComponent.
 ![imports](https://github.com/davidvdijk/brightcubes-workshop/blob/master/images/snippet20.PNG)
-*Let op!: je ziet waarschijnlijk dat deze t.o.v. van andere injections die we deden wél public is. Door hem public te maken kunnen we hem i.p.v. alleen vanuit de controller, ook vanuit de template benaderen.*
-- Voeg onderstaande styling toe aan *detail.component.scss*
-</br>
+
+*</br>Let op!: je ziet waarschijnlijk dat deze t.o.v. van andere injections die we deden wél public is. Door hem public te maken kunnen we hem i.p.v. alleen vanuit de controller, ook vanuit de template benaderen.*
+- Voeg onderstaande styling toe aan *detail.component.scss</br>*
 ![imports](https://github.com/davidvdijk/brightcubes-workshop/blob/master/images/snippet21.PNG)
 - Vervang de inhoud van detail.component.html voor onderstaande ![imports](https://github.com/davidvdijk/brightcubes-workshop/blob/master/images/snippet22.PNG)
 	- In deze snippet zie je dat contactService direct wordt aangesproken, en door de async pipe ( | ) asynchroon wordt ingeladen zodra selectedContact$ een waarde heeft. Door ‘as contact’ wijs je die waarde toe aan een variabele naam die je door in je template kunt gebruiken.
