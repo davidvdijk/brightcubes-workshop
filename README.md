@@ -70,7 +70,8 @@ Hier zie je dat de contacten asynchroon worden uitgelezen, en als hij gevuld is,
 - Bovenstaande template gaat nog niet werken aangezien we gebruik maken van angular material. Deze package wordt niet standaard meegeleverd en moet los worden geïnstalleerd.
 	- Voer in je command line uit: **ng add @angular/material**
 		- Angular material wordt toegevoegd aan je *package.json* file, hier staan alle packages in die geïnstalleerd zijn voor je applicatie.
-	- Voeg hierna **MatListModule** toe aan *app.module.ts* imports, om aan te geven dat deze specifieke module bruikbaar is voor je app.![imports](https://github.com/davidvdijk/brightcubes-workshop/blob/master/images/snippet15.PNG)
+	- Voeg hierna **MatListModule** toe aan *app.module.ts* imports, om aan te geven dat deze specifieke module bruikbaar is voor je app.
+![imports](https://github.com/davidvdijk/brightcubes-workshop/blob/master/images/snippet15.PNG)
 	- Voeg bovenaan de app.module.ts file de volgende regel toe
 ![imports](https://github.com/davidvdijk/brightcubes-workshop/blob/master/images/snippet16.PNG)
 	 - Als je nu naar localhost:4200 gaat is de lijst wél te zien.
@@ -86,10 +87,12 @@ Hier zie je dat de contacten asynchroon worden uitgelezen, en als hij gevuld is,
 ![imports](https://github.com/davidvdijk/brightcubes-workshop/blob/master/images/snippet20.PNG)
 *Let op!: je ziet waarschijnlijk dat deze t.o.v. van andere injections die we deden wél public is. Door hem public te maken kunnen we hem i.p.v. alleen vanuit de controller, ook vanuit de template benaderen.*
 - Voeg onderstaande styling toe aan *detail.component.scss*
+&nbsp;
 ![imports](https://github.com/davidvdijk/brightcubes-workshop/blob/master/images/snippet21.PNG)
 - Vervang de inhoud van detail.component.html voor onderstaande ![imports](https://github.com/davidvdijk/brightcubes-workshop/blob/master/images/snippet22.PNG)
 	- In deze snippet zie je dat contactService direct wordt aangesproken, en door de async pipe ( | ) asynchroon wordt ingeladen zodra selectedContact$ een waarde heeft. Door ‘as contact’ wijs je die waarde toe aan een variabele naam die je door in je template kunt gebruiken.
 - De card is nog niet zichtbaar omdat het een module uit @angular/material is, deze moeten we net zoals de list toevoegen aan de imports van app.module.ts en bovenaan toevoegen zodat de module weet waar hij de module kan vinden.
+&nbsp;
 ![imports](https://github.com/davidvdijk/brightcubes-workshop/blob/master/images/snippet23.PNG)
 - Zorg dat de titel, voornaam en achternaam in de titel van de card wordt gebruikt.
 - Zorg dat het emailadres in de subtitel zichtbaar wordt, de thumbnail in de mat-card-avatar, en een grote afbeelding in mat-card-image.
