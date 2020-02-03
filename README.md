@@ -1,6 +1,6 @@
 # Workshop
 - [Angular](https://angular.io/) 8
-- [Angular CLI](https://github.com/angular/angular-cli) version 8.3.12
+- [Angular CLI](https://github.com/angular/angular-cli) version 8.3.24
 - [Node.js](https://nodejs.org/en/) version 12.13.0 LTS
 - [Angular Material](https://material.angular.io/) version 8.2.3
 
